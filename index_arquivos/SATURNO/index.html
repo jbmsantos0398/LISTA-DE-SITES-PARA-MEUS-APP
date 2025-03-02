@@ -348,11 +348,84 @@ img {
 <!-------------------------------------------------------------------------------->
 <center>
 <!-------------------------------------------------------------------------------->
-<h3>VEJA ESSE SITE NO PC (Copie e cole o link no navegador )<a href="
-https://jbmsantos0398.github.io/LISTA-DE-SITES-PARA-MEUS-APP/index_arquivos/SATURNO/index.html
-" target="_blank">
-COPIE AQUI
-</a></h3><hr/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<p>Enviar o link desse site para um amigo via<a href="
+https://api.whatsapp.com/send?text=https://jbmsantos0398.github.io/LISTA-DE-SITES-PARA-MEUS-APP/index_arquivos/SATURNO/index.html
+" target="_blank"><img src="
+https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png
+" width="60" height="60"> WHATSAPP </a>
+</p>
+
+<h3>VEJA ESSE SITE NO PC (Copie e cole o link no navegador)</h3>
+
+
+<input type="text" value="https://jbmsantos0398.github.io/LISTA-DE-SITES-PARA-MEUS-APP/index_arquivos/SATURNO/index.html" id="myInput">
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Clique aqui para copiar</span>
+Clique aqui para copiar
+</button></div>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "LINK COPIADO: " + copyText.value;
+}
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script></body></html><hr/>
 <!-------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------->
